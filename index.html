@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    List and explain the JavaScript methods that enable us to select elements from the DOM. 
+
+What is the document object? What are some other methods available on the document object that don't select elements from the DOM? Why is the virtual DOM faster? 
+
+ 
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model 
+
+1.List and explain the JavaScript methods that enable us to select elements from the DOM. 
+
+ 
+
+JavaScript methods that enable us to select elements from the DOM are 
+
+Document. The following 
+
+JavaScript methods that enable us to select elements fromt he Dom are 
+
+document. The following methods 
+
+-getElementById 
+
+This method selects a single Id by its unique attribute “Id”.  
+
+-getElementByClass 
+
+This method grabs a group of elements based on its specified attribute “Class”. It returns a collection of elements. 
+
+-getElementbyTagName 
+
+This method works the same as the Class method but using the specified “tag” attribute. 
+
+-querySelector 
+
+This method grabs the first element that matches the specified CSS Selector. It only grabs one element. 
+
+-querySelectorAll 
+
+This method works similarly to the querySelector but returns a NodeList that contains all elements that match the CSS Selector. 
+
+ 
+
+2. What is the document object? What are some other methods available on the document object that don't select elements from the DOM? Why is the virtual DOM faster? 
+
+ 
+
+The Document Object is a unique programming interface that represents HTML objects structured as a tree of objects. Some other methods that do not grab elements are properties like changing or modifying some of the CSS attributes, changing HTML elements, adding or removing elements and attributes, responding to user events by click or presses, and creating new events on the page. 
+
+The virtual DOM is just a representation of the actual DOM, so making renderings to it is a lot faster as you are not actual speaking to the actual DOM. It is just synced up so we do not have to speak directly to the DOM ourselves. The frameworks that do this that I know of are React and Vue, but I know there are a lot more. The slowness is because speaking to the DOM you must create and append one thing at a time. Technically the virtual DOM is not faster, it just seems faster to us because the framework is doing all of the work on the backend for us. 
+</body>
+</html>
